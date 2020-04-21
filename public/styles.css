@@ -1,13 +1,16 @@
 body 
 {
     font-family: sans-serif;
+    margin: 30px;
 }
 
 .container
 {
     min-width: 310px; 
     height: 600px; 
-    margin: 50px auto
+    padding: 10px;
+    margin: 50px auto;
+    border: 1px solid grey;   
 }
 #stadiums
 {

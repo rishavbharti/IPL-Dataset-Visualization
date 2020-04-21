@@ -12,7 +12,6 @@ Linux: https://git-scm.com/downloads
 
 Windows: https://gitforwindows.org/
 
-Watch [this tutorial on YouTube](https://www.youtube.com/watch?v=rWboGsc6CqI) if required. Feel free to refer to other tutorials as well.
 
 **3: Install VSCode**
 
@@ -21,7 +20,7 @@ https://code.visualstudio.com/download
 **4: Clone this repository**
 
 ```sh
-git clone https://gitlab.com/mountblue/propel/ipl
+git clone https://github.com/rishavbharti/IPL-Dataset-Visualization.git
 ```
 
 **5: Install npm packages**
@@ -59,13 +58,3 @@ Open http://127.0.0.1:8080
 **`node_modules`**: This directory is used by node and npm to store third party packages like `csvtojson` and `http-server`.
 
 **`index.js`**: This file contains the code which: 1. Reads the csv data 2. Calls the JavaScript business logic functions. 3. Saves the results in `public/data.json`
-
----
-
-## Problems
-
-1. Plot the total number of matches played each year. (This problem is solved).
-2. Plot the number of matches won by each team over all the years of IPL.
-3. For the year 2016, plot the extra runs conceded by each team.
-4. For the year 2015, plot the top 10 economical bowlers along with their economy rates.
-5. Discuss a "Story" you want to tell with the given data.

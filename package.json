@@ -2,10 +2,9 @@
   "name": "ipl_project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "ipl": "node index.js",
-    "start": "http-server"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,3 +16,4 @@
     "nodemon": "^2.0.3"
   }
 }
+

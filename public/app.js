@@ -20,16 +20,27 @@ var year
 const form = document.querySelector('form')
 form.addEventListener('submit', (e)=>{
   year = form.elements.year.value
-  console.log(form.elements.year.value)
+  //console.log(form.elements.year.value)
   e.preventDefault()
-  fetch("./data.json")
+  fetch(`/economy?year=${year}`)
     .then(data => data.json())
     .then(visualizeCustomData)
-  })
+})
+
+// var year
+// const form = document.querySelector('form')
+// form.addEventListener('submit', (e)=>{
+//   year = form.elements.year.value
+//   //console.log(form.elements.year.value)
+//   e.preventDefault()
+//   fetch("./data.json")
+//     .then(data => data.json())
+//     .then(visualizeCustomData)
+// })  data.economyBowlers[year], year
 
 function visualizeCustomData(data)
 {
-  document.querySelector("#custom-economy-bowlers").innerHTML="", visualizeCustomEconomyBowlers(data.economyBowlers[year], year)
+  document.querySelector("#custom-economy-bowlers").innerHTML="", visualizeCustomEconomyBowlers(data, year)
   return;
 }
 

@@ -6,7 +6,7 @@ app.use(express.static(__dirname+'/public'));
 
 const hostname = 'localhost'
 const port = process.env.PORT || 3000
-app.listen(port, hostname, ()=>console.log(`Listening on port http://${hostname}:${port}/`))
+app.listen(port, ()=>console.log(`Listening on port http://${hostname}:${port}/`))
 
 app.get('/', (req, res) => {
     res.sendFile(index.js)

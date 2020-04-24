@@ -7,7 +7,7 @@
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rishav Bharti",
   "license": "ISC",
   "dependencies": {
     "csvtojson": "^2.0.10",
